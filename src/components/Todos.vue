@@ -2,6 +2,8 @@
   <div class="hello">
     {{ name }}
 
+    {{ btnState ? 'The Button is Disabled' : 'The Button is active' }}
+
     <button v-on:click="changeName" v-bind:disabled="btnState">Change Name</button>
   </div>
 </template>
