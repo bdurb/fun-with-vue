@@ -29,8 +29,14 @@ export default {
   },
   methods: {
     addTodo() {
-      this.todos.push({todo: this.todo})
-      this.todo = ''
+      this.$validator.validateAll().then((res) => {
+        if (res) {
+          this.todos.push({todo: this.todo})
+          this.todo = ''
+        } else {
+          alert('Not Long Enough!')
+        }
+      })
     }
   }
 }
