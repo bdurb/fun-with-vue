@@ -3,7 +3,8 @@
     <div class="holder">
 
       <form @submit.prevent="addTodo">
-      <input type="text" placeholder="Enter a Todo.." v-model="todo">
+      <input type="text" placeholder="Enter a Todo.." v-model="todo" v-validate="'min:5'" name="todo">
+      <p class="alert" v-if="errors.has('todo')">{{ errors.first('todo') }}</p>
       </form>
 
       <ul>
