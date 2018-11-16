@@ -75,4 +75,12 @@ export default {
     background-color: #323333;
     color: #687F7F;
   }
+
+  .alert {
+    background: #fdf2ce;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px;
+    margin-top: -20px;
+  }
 </style>
