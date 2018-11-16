@@ -1,6 +1,14 @@
 # fun-with-vue
 
-initial project using Vue.
+Basic "Todo" application build using:
+Vue
+Vue Router
+Animate-CSS
+Font Awesome
+
+With the ability to add/remove Todos, as well as routing to an about page. 
+
+Currently there is no data persistence, but that could easily be added. 
 
 ## Project setup
 ```
