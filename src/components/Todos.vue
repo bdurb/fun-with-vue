@@ -11,7 +11,9 @@
       </form>
 
       <ul>
-        <li v-for="(data, index) in todos" :key="index">{{ data.todo }}</li>
+        <transition-group name="list" enter-active-class="animated bounceInUp" leave-active-class="animated bounceOutDown">
+          <li v-for="(data, index) in todos" :key="index">{{ data.todo }}</li>
+        </transition-group>
       </ul>
       <p>These are your todos</p>
     </div>
@@ -47,6 +49,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+@import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
+
 .holder {
     background: #fff;
   }
