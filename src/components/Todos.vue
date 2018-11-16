@@ -94,11 +94,11 @@ export default {
   }
 
   .alert-in-enter-active {
-    animation: bounce-in .5s;
+    animation: bounce-in .4s;
   }
 
   .alert-in-leave-active {
-    animation: bounce-in .5s reverse;
+    animation: bounce-in .4s reverse;
   }
 
   @keyframes bounce-in {
