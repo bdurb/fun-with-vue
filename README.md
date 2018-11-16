@@ -1,5 +1,7 @@
 # fun-with-vue
 
+initial project using Vue.
+
 ## Project setup
 ```
 npm install
