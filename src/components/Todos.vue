@@ -127,5 +127,6 @@ export default {
 
   i {
     float: right;
+    cursor: pointer;
   }
 </style>
