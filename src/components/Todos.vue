@@ -45,9 +45,11 @@ export default {
   methods: {
     addTodo() {
       this.$validator.validateAll().then((res) => {
-        if (res) {
+        if (res && this.todo !== '') {
           this.todos.push({todo: this.todo})
           this.todo = ''
+        } else if (this.todo === '') {
+          alert('please enter in a todo')
         } else {
           alert('Not Long Enough!')
         }
